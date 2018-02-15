@@ -1,0 +1,195 @@
+#navigacija {
+	 background-color: #530006;
+	 height:40px;  
+}
+
+#navigacija ul {
+	margin:0;
+	list-style:none;
+	padding:0;
+}
+
+#navigacija ul li {
+	
+    float: left;
+	position:relative;
+}
+.mar {
+	margin-right:12px;
+}
+#navigacija ul li a {
+	display:block;
+	padding:10px;
+	height:20px;
+	
+}
+
+#navigacija ul li a:link,
+#navigacija ul li a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#navigacija ul li a:hover {
+	color:#000000;
+	background:#FFF;
+	
+}
+
+#navigacija ul li ul {
+	
+	background-color: #530006;
+	color:#000000;
+	z-index:1000;
+	width:150px;
+	position:absolute;
+	top:100%;
+	left:0;
+	display:none; /* u startu */
+}
+
+#navigacija ul li:hover > ul {
+	display:block; /* na hover 1. */
+	
+}
+
+#navigacija ul li ul li {
+	float:none;
+	
+}
+
+#navigacija ul li ul li ul {
+	left:100%;
+	top:0;
+	min-width:200px;
+}
+
+/*#navigacija ul {
+	float:left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#navigacija {
+     clear:both;
+     overflow: hidden;
+	 background-color: #333;
+	 border-radius: 8px;
+}
+
+#navigacija li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:  #d4cebc;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+	z-index:10000000;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+
+
+#social {
+	float:right;
+	font-size:16px;
+	margin:4px 15px 0 0;
+	color: #FFF;
+}
+
+/*preloader*//***************/
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+ /* text-align: center;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+

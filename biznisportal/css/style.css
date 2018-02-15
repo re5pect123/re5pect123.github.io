@@ -1,0 +1,3586 @@
+
+
+
+@charset "UTF-8";
+
+/* fontovi su u reset.css, legacy css u... legacy.css */
+
+/*********** BEGIN: 1.0 General ***********/
+
+p {
+	font-family: Arial;
+	color: #333;
+	font-size: 16px;
+	line-height: 170%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+strong {
+	font-weight: 900;
+}
+
+h1 {
+	font-family: msr9;
+	line-height: 130%;
+}
+
+pre {
+	font-family: monospace;
+	margin-bottom: 20px;
+	margin-top: -20px;
+	border-left: 3px solid #708f2e;
+	padding: 10px !important;
+	font-size:14px;
+	}
+
+code {  display: inline-block; width: 660px; white-space: pre-wrap; }
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.levo {
+	float: left;
+}
+
+.desno {
+	float: right;
+}
+
+.alignright  {
+	float: right;
+	margin-left: 20px;
+	padding-bottom: 20px;
+}
+
+.white-bg {
+	background-color: white;
+}
+
+.clear {
+	clear: both;
+}
+
+.hidden {
+visibility:hidden;	}
+
+.unhidden {
+	visibility: visible !important;
+}
+
+.display-hidden {
+	display: none;
+}
+
+.display-unhidden {
+	display: block !important;
+}
+
+.to-uppercase {
+	text-transform: uppercase;
+}
+
+.centerit {
+	text-align: center;
+	margin: 0 auto;
+}
+
+header {
+	height: 57px;
+	background-color: #fff;
+	z-index: 999;
+}
+
+#header-single {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	border-bottom: 1px #eee solid;
+}
+
+	.header-border {
+
+	}
+
+	#header-wrap {
+		max-width: 960px;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+		#header-logo {
+			float: left;
+			margin-top: 9px;
+		}
+
+		#header-nav {
+			float: right;
+			margin-top: 18px;
+		}
+
+			#header-nav li {
+				display: inline-block;
+				color: #000;
+				font-family: msr7;
+				font-size: 15px;
+				text-transform: uppercase;
+				padding: 0 20px;
+			}
+
+				#header-nav li i {
+					font-size: 18px;
+				}
+
+				#header-nav li.hamburger {
+					padding-right: 0px;
+				}
+
+
+				#header-nav .search-item form{
+					/*display: none;*/
+					display: inline-block;
+				}
+
+				#header-nav .search-item #s{
+					width: 0;
+					border: none;
+					padding: 2px;
+
+					 -webkit-transition: width 0.5s;
+					  -moz-transition: width 0.5s;
+					  -o-transition: width 0.5s;
+					  transition: width 0.5s;
+				}
+
+				#header-nav .search-item.search-active form{
+					/*display: inline-block;*/
+				}
+
+				#header-nav .search-item.search-active #s{
+					width: 120px;
+				    padding: 7px 5px;
+				    background-color: #eee;
+				    margin-right: 10px;
+				}
+
+#key-visual {}
+
+	.kv-slide {
+		background-image: url('images/featured-image.jpg');
+		background-position: center top;
+		background-repeat: no-repeat;
+		height: 435px;
+		margin-bottom: 45px;
+	}
+
+	.kv-text {
+		max-width: 900px;
+		text-align: center;
+		margin-bottom: 55px;
+	}
+
+	#key-visual h1 {
+		font-size: 38px;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	#kv-cta {
+	  font-family: msr1;
+	  font-size: 15px;
+	  color: #333;
+	  padding-bottom: 10px;
+	  border-bottom: #666 solid 1px;
+	  text-transform: uppercase;
+	}
+
+.author-hero {
+	padding-top: 40px;
+	border-top: 1px solid #ccc;
+	border-bottom: none;
+}
+
+.author-page-photo {
+	border-radius: 50%;
+}
+
+.author-wrap {
+	width: 600px;
+}
+
+.author-icons ul {
+	text-align: center;
+}
+
+.author-icons li {
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 20px;
+}
+
+#category-hero {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 40px;
+}
+	.category-slide {
+/*
+		background-image: url('http://startit.rs/wp-content/uploads/category-dizajn.jpg');
+		background-position: center top;
+		background-repeat: no-repeat;
+		height: 335px;
+		margin-bottom: 45px;
+*/
+		/* margin-top: 100px;	 */
+	}
+
+		.category-Dizajn {
+			background-image: url('../../../media/category-dizajn.jpg');
+			background-position: center top;
+			background-repeat: no-repeat;
+			height: 335px;
+			margin-top: 0px;
+			margin-bottom: 45px;
+		}
+
+		.category-Tehnologija {
+			background-image: url('../../../media/category-tehnologija.jpg');
+			background-position: center top;
+			background-repeat: no-repeat;
+			height: 335px;
+			margin-top: 0px;
+			margin-bottom: 45px;
+		}
+
+		.category-Biznis {
+			background-image: url('../../../media/category-biznis.jpg');
+			background-position: center top;
+			background-repeat: no-repeat;
+			height: 335px;
+			margin-top: 0px;
+			margin-bottom: 45px;
+		}
+
+		.category-Marketing {
+			background-image: url('../../../media/category-marketing1.jpg');
+			background-position: center top;
+			background-repeat: no-repeat;
+			height: 335px;
+			margin-top: 0px;
+			margin-bottom: 45px;
+		}
+
+		.category-Biotehnologija {
+			background-image: url('../../../media/biotehnologija-startit-cover1.jpg');
+			background-position: center top;
+			background-repeat: no-repeat;
+			height: 335px;
+			margin-top: 0px;
+			margin-bottom: 45px;
+		}
+
+		#category-hero h1 {
+			color: #000;
+			font-family: msr1;
+			font-size: 65px;
+			text-align: center;
+		}
+
+		#category-hero p {
+			font-family: msr3;
+			font-size: 18px;
+			color: #333;
+			text-align: center;
+			width: 90%;
+			max-width: 600px;
+			margin: 10px auto 30px;
+		}
+
+		#key-visual mark {
+			background-color: #bfeec5;
+/* 			background: url('images/green-highlight.png') repeat-x; */
+			box-shadow: 10px 0 0 #bfeec5, -10px 0 0 #bfeec5;
+			height: 59px;
+			display: inline;
+			padding: 6px 0;
+		}
+
+	#key-visual p {
+		font-family: msr3;
+		font-size: 18px;
+		color: #333;
+		line-height: 180%;
+		margin-bottom: 35px;
+	}
+
+	#slider-nav {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+		#slider-nav li {
+			display: inline;
+			padding: 0 7px;
+		}
+
+			.slider-image {
+				border-radius: 50%;
+				border: 4px solid #fff;
+			}
+
+			.slider-image-active {
+				opacity: 0.5;
+			}
+
+			.slider-image:hover {
+				border-radius: 50%;
+				border: 4px solid #ccc;
+			}
+
+#post-listing {
+	width: 650px;
+	max-width: 100%;
+
+	margin: 0 auto;
+}
+
+	#post-listing-settings {
+		margin-bottom: 40px;
+	}
+
+		#post-listing-settings a {
+			font-family: msr3;
+			font-size: 15px;
+			color: #333;
+			text-transform: uppercase;
+			padding-bottom: 10px;
+			margin-right: 30px;
+			float: left;
+		}
+
+			#post-listing-settings a.pls-active {
+				font-family: msr7;
+				color: #000;
+				border-bottom: 5px solid #3da598;
+			}
+
+			#post-listing-settings a:hover {
+				border-bottom: 5px solid #3da598;
+				}
+
+			#post-listing-settings a.pls-categories {
+				margin: 0;
+				float: right;
+				border-bottom: 5px solid #2d77bd;
+			}
+
+	.post-listing-item {
+		margin-bottom: 65px;
+	}
+
+		.post-listing-item h2 {
+			font-family: msr9;
+			font-size: 30px;
+			margin-bottom: 15px;
+			line-height: 130%;
+		}
+
+		.post-listing-item p {
+			margin: 12px 0 10px;
+			color: #555;
+		}
+
+		.post-listing-author {
+			border-radius: 50%;
+			float: left;
+		}
+
+		.post-listing-date {
+			float: left;
+			margin: 8px 0 0 10px;
+			font-family: msr5;
+			color: #333;
+			font-size: 14px;
+			text-transform: uppercase;
+			display: inline;
+		}
+
+	.listing-more-posts {
+		margin: 0 auto 60px;
+		text-align: center;
+	}
+
+
+	.post-listing-item img{
+		max-width: 100%;
+		height: auto;
+	}
+
+		.listing-more-posts-image {
+			border-radius: 50%;
+/* 			border: 10px solid #eee; */
+/* 		    box-shadow: 10px 0 0 #bfeec5, -10px 0 0 #bfeec5; */
+/*   box-shadow: -3px 0 0 rgb(217,31,38) , -6px 0 0 rgb(226,91,14) , -9px 0 0 rgb(245,221,8) , -12px 0 0 rgb(5,148,68) , -15px 0 0 rgb(2,135,206) , -18px 0 0 rgb(4,77,145) , -21px 0 0 rgb(42,21,113) ; */
+
+		}
+
+
+#footer-box {
+background-image: url('images/footer-bgd.jpg');
+background-color: #000;
+background-repeat: no-repeat;
+text-align: center;
+height: auto;
+background-size: cover;
+background-position: center center;
+}
+
+#newsletter {
+	padding: 120px 0;
+}
+
+	#newsletter h2 {
+		color: #fff;
+		font-family: msr7;
+		font-size: 54px;
+		margin-bottom: 22px;
+	}
+
+	#newsletter p {
+		font-family: msr1;
+		color: #ccc;
+		font-size: 18px;
+		margin-bottom: 27px;
+	}
+
+	#newsletter-form {
+		margin: 0 auto;
+		text-align: center;
+		display: inline;
+	}
+
+		#newsletter-form input[type="email"] {
+		  width: 220px;
+		  height: 25px;
+		  background-color: transparent;
+		  border: 2px solid #8d8d8d;
+		  color: #fff;
+		  font-family: msr3;
+		  font-size: 16px;
+		  padding: 10px;
+		  margin-bottom: 30px;
+		}
+
+		#newsletter-form button {
+		  font-size: 16px;
+		  color: #fff;
+		  background: #3da598;
+		  border: none;
+		  padding: 16px 35px;
+		  cursor: pointer;
+		  margin-left: 20px;
+		  font-family: msr7;
+		}
+
+  		#newsletter-form input[type=checkbox] { display:none;} /* to hide the checkbox itself */
+		#newsletter-form input[type=checkbox] + label:before {
+		  font-family: FontAwesome;
+		  font-size: 20px;
+		  display: inline-block;
+		}
+
+		#newsletter-form label {
+			font-family: msr1;
+			color: #abadae;
+			font-size: 14px;
+			text-transform: uppercase;
+		  padding: 0 10px;
+		}
+
+		#newsletter-form input[type=checkbox] + label:before { content: "\f00d"; color: #ea666a;} /* unchecked icon */
+		#newsletter-form input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+		#newsletter-form input[type=checkbox]:checked + label:before { content: "\f00c"; color: #3da598;} /* checked icon */
+		#newsletter-form input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+
+/* novi stari post */
+
+#single-kv {
+width: 100%;
+}
+
+#single-intro {
+	background: #fff;
+	padding: 50px 0 5px;
+}
+
+#single-intro-wrap {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+	#single-intro-wrap h1 {
+		font-family: msr9;
+		font-size: 44px;
+		color: #222;
+	    line-height: 130%;
+	    margin-bottom: 22px;
+	    text-align: center;
+	}
+
+	#single-intro-wrap p {
+		font-family: msr3;
+		line-height: 210%;
+		color: #333;
+		font-size: 18px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	#single-intro-wrap p a {
+		border-bottom: 2px solid #9cc;
+		color: #333;
+		padding-bottom: 2px;
+	}
+
+	#single-intro-wrap p a:hover {
+		border-bottom: 2px solid #39c;
+		color: #000;
+		padding-bottom: 2px;
+		text-decoration: none;
+	}
+
+#single-body {
+	background: #fff;
+	padding: 20px 0 40px;
+}
+
+#single-content {
+	max-width: 660px;
+	margin: 0 auto;
+}
+
+#single-content img{
+	max-width: 100%;
+	height: auto;
+
+}
+
+	#single-content p {
+		color: #444;
+		font-family: Arial;
+		font-size: 18px;
+		line-height: 205%;
+		margin-bottom: 23px;
+   	}
+
+   		#single-content a {
+			border-bottom: 2px solid #39c;
+			color: #000;
+			padding-bottom: 2px;
+   		}
+
+   		#single-content a:hover {
+			border-bottom: 2px solid #9cc;
+			color: #000;
+			padding-bottom: 2px;
+			text-decoration: none;
+   		}
+
+		#single-content ul {
+			margin-bottom: 15px;
+		}
+
+		#single-content ul li {
+			list-style: disc;
+			list-style-position: inside;
+			color: #444;
+			font-family: Arial;
+			font-size: 18px;
+			line-height: 185%;
+			padding-left: 35px;
+		}
+
+		#single-content  ol {
+			margin-bottom: 15px;
+		}
+
+		#single-content  ol li {
+			list-style-position: inside;
+			list-style-type: decimal;
+			color: #444;
+			font-family: Arial;
+			font-size: 16px;
+			line-height: 185%;
+			padding-left: 35px;
+		}
+
+   	#single-content h2 {
+	    font-family: msr7;
+	    font-size: 36px;
+	    margin: 0 0 23px;
+	    padding-top: 10px;
+		line-height: 125%;
+   	}
+
+   	#single-content h3 {
+	    font-family: msr7;
+	    font-size: 28px;
+	    margin: 0 0 23px;
+	    padding-top: 10px;
+		line-height: 125%;
+   	}
+
+   	#single-content h4 {
+	    font-family: msr3;
+	    font-size: 28px;
+	    margin: 0 0 23px;
+	    padding-top: 10px;
+		line-height: 125%;
+   	}
+
+   	#single-content h5 {
+	    font-family: msr3;
+	    font-size: 22px;
+	    margin: 0 0 23px;
+	    padding-top: 10px;
+		line-height: 125%;
+   	}
+
+   	#single-content blockquote {
+    background: none repeat scroll 0 0 #fff;
+    border-left: 5px solid #068e02;
+    color: #4b4b4b;
+    line-height: 166%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0px 25px 0px;
+    width: 610px;
+    max-width: 100%;
+	}
+
+		#single-content blockquote p {
+			font-family: msr3;
+			font-size: 18px;
+		}
+
+		#single-content blockquote strong {
+			font-family: msr7;
+			font-size: 17px;
+		}
+
+	#single-social-gore {
+		padding: 12px 0;
+	}
+
+	#single-social-dole {
+		margin-bottom: 50px;
+	}
+
+	.twitter-share-button {
+		padding-left: 25px;
+	}
+
+	.IN-widget {
+		padding-left: 25px;
+	}
+
+	.fb_iframe_widget iframe {
+		margin-top: -3px;
+	}
+
+	.buffer-button {
+		padding-left: 25px;
+	}
+
+	#single-share-cta {
+		margin: 45px auto 32px;
+		text-align: center;
+		background-image: url('images/single-share-handwritten.png');
+		width: 275px;
+		height: 35px;
+	}
+
+
+
+#single-comments {
+	width: 660px;
+	max-width: 100%;
+	margin: 0 auto 40px;
+	list-style: none;
+}
+	.comment-photo {
+		border-radius: 50%;
+		float: left;
+		width: 35px;
+		margin-right: 20px;
+	}
+
+	.comment-content {
+		float: left;
+		width: 605px;
+		max-width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.comment-name {
+		font-family: msr7;
+		color: #000;
+		font-size: 17px;
+		margin-bottom: 7px;
+	}
+
+	.comment-author {
+		padding: 3px 4px;
+		background-color: #b9f6d4;
+		display: inline-block;
+	}
+
+	.objavio-la {
+		font-family: msr3;
+		text-transform: uppercase;
+		font-size: 12px;
+		color: #656565;
+		margin-bottom: 6px;
+	}
+
+	.comment-time {
+		font-family: msr3;
+		text-transform: uppercase;
+		font-size: 12px;
+		color: #656565;
+		margin-bottom: 6px;
+	}
+
+	.comment-content p {
+		color: #555;
+		margin-bottom: 7px;
+	}
+
+	.comment-content textarea {
+		background: url('images/comment-textarea-bgd.png') repeat-x;
+		border: none;
+		width: 605px;
+		max-width: 100%;
+		height: 90px;
+		font-size: 16px;
+		font-family: arial;
+		color: #555;
+		line-height: 190%;
+		resize: none;
+  	}
+
+  	#comment-controls li {
+	  	display: inline;
+  	}
+
+		#comment-controls input {
+		  width: 140px;
+		  height: 35px;
+		  border: none;
+		  border-bottom: 1px solid #d9d9d9;
+		  color: #555;
+		  font-family: msr3;
+		  font-size: 13px;
+		  margin: 2px 20px 0 0;
+  		}
+
+		#comment-controls li button {
+		  font-size: 13px;
+		  color: #fff;
+		  background: #3da598;
+		  border: none;
+		  padding: 10px 24px;
+		  cursor: pointer;
+		  font-family: msr5;
+		  text-transform: uppercase;
+		  float: right;
+		  margin-top: 6px;
+		}
+
+#single-related {
+	max-width: 800px;
+	margin-bottom: 350px; /* RESITI */
+}
+
+	#single-related header {
+		font-family: msr9;
+		font-size: 45px;
+		color: #222;
+		margin-bottom: 5px;
+	}
+
+	#single-related ul {
+		padding: 20px 0;
+		text-align: center;
+	}
+
+		.related-item {
+			display: inline;
+			max-width: 150px;
+			float: left;
+			padding: 0 25px;
+		}
+
+		#single-related h6 {
+			font-family: msr7;
+			font-size: 16px;
+			text-align: left;
+			margin-top: 10px;
+			line-height: 150%;
+		}
+
+		.related-zebra {
+			font-family: msr3;
+		}
+
+
+#single-jobs {
+	width: 220px;
+	background-color: #fff;
+	line-height: 195%;
+	position: fixed;
+	top: 80px;
+	right: 10px;
+	visibility: hidden;
+	z-index: 999;
+}
+
+#single-jobs a, a:hover {
+	border: none;
+}
+
+#single-jobs ul li {
+	list-style: none;
+	padding: 0;
+}
+/*
+
+#single-jobs span {
+	margin: 15px 20px 0 0;
+	font-family: 'msr5';
+	font-size: 16px;
+	padding-bottom: 20px;
+	color: #999;
+}
+*/
+
+#single-jobs h2 {
+	font-size: 18px;
+	line-height: 135%;
+	font-family: 'msr7';
+	color: #000;
+	margin-bottom: 5px;
+	padding: 0px 10px 0 0;
+}
+
+#single-jobs h2 span {
+	background-color: #fff69e;
+}
+
+#single-jobs small a {
+			font-family: 'msr5';
+			font-size: 12px;
+			color: #666;
+			margin: 8px 12px 0 0;
+			float: left;
+			text-transform: uppercase;
+		}
+
+#single-jobs small a:hover {
+			color: #000;
+			text-decoration: none;
+		}
+
+.single-jobs-location {
+	font-family: msr5;
+	font-size: 12px;
+	margin-top:8px;
+	text-transform: uppercase;
+	color: #888;
+	line-height: 120%;
+}
+
+
+.np-metabar {
+    background-color: #fff;
+    height: 50px;
+    clear: both;
+    border-top: 1px solid #ccc;
+}
+
+/* good artists copy */
+
+.category-thumbs {
+    max-width: 2560px;
+    margin: 0 auto 50px;
+}
+.category-thumbs ul {
+    margin: 0;
+    position: relative;
+    z-index: 1
+}
+.category-thumbs ul:before,
+.category-thumbs ul:after {
+    content: ' ';
+    display: table
+}
+.category-thumbs ul:after {
+    clear: both
+}
+html.oldie .category-thumbs ul {
+    zoom: 1
+}
+.category-thumbs li {
+    list-style: none;
+    position: relative;
+    z-index: 1;
+    min-height: 2px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 25%
+}
+html.oldie .category-thumbs li {
+    width: 24.975%
+  }
+
+
+/*
+#single-kv,
+#footer-box{
+	display: none;
+}
+*/
+
+@media all and (max-width: 1150px){
+
+	#single-jobs {
+	    display: none;
+    }
+}
+
+@media only screen and (max-width: 735px) and (max-device-width: 735px) {
+    .category-thumbs li {
+        position: relative;
+        z-index: 1;
+        min-height: 2px;
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100%
+    }
+
+    .category-thumbs .cats {
+        border-left: none;
+        border-right: none
+    }
+    .category-thumbs .cat-thumb-1 .cats,
+    .category-thumbs .cat-thumb-2 .cats,
+    .category-thumbs .cat-thumb-3 .cats,
+    .category-thumbs .cat-thumb-4 .cats {
+        border-left: none;
+        border-right: none;
+    }
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        background-size: 736px 200px;
+        background-image: url("images/cat-thumbs-1-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        background-size: 736px 200px;
+        background-image: url("images/cat-thumbs-2-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        background-size: 736px 200px;
+        background-image: url("images/cat-thumbs-3-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        background-size: 736px 200px;
+        background-image: url("../../../media/biotehnologija-x2.jpg")
+    }
+}
+.category-thumbs .cats {
+    display: block;
+    min-height: 200px;
+    font: 0/0 a;
+    color: transparent;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1068px) {
+    .category-thumbs .cats {
+    }
+    .category-thumbs .cat-thumb-1,
+    .category-thumbs .cat-thumb-2,
+    .category-thumbs .cat-thumb-3 {
+        border-bottom: none;
+    }
+    .category-thumbs .cat-thumb-2 .cats {
+        border-right: none
+    }
+    .category-thumbs .cat-thumb-1 .cats,
+    .category-thumbs .cat-thumb-3 .cats {
+        border-left: none
+    }
+    .category-thumbs li {
+        position: relative;
+        z-index: 1;
+        min-height: 2px;
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 50%
+    }
+}
+.category-thumbs .cat-thumb-1 .cats {
+    border-left: none
+}
+.category-thumbs .cat-thumb-4 .cats {
+    border-right: none
+}
+.category-thumbs .cat-thumb-1 .cat-biznis {
+    background-repeat: no-repeat;
+    background-size: 640px 200px;
+    background-image: url("images/cat-thumbs-1.jpg")
+}
+@media only screen and (max-width: 1068px),
+only screen and (max-height: 800px) {
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        background-size: 534px 200px;
+        background-image: url("images/cat-thumbs-1.jpg")
+    }
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        background-size: 534px 200px;
+        background-image: url("images/cat-thumbs-2.jpg")
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        background-size: 534px 200px;
+        background-image: url("images/cat-thumbs-3.jpg")
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        background-size: 534px 200px;
+        background-image: url("../../../media/biotehnologija.jpg")
+    }
+
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-height: 800px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi),
+only screen and (max-height: 800px) and (min-resolution: 144dpi),
+only screen and (max-width: 1068px) and (min-resolution: 144dppx),
+only screen and (max-height: 800px) and (min-resolution: 144dppx) {
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        background-image: url("images/cat-thumbs-1-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        background-image: url("images/cat-thumbs-2-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        background-image: url("images/cat-thumbs-3-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        background-image: url("../../../media/biotehnologija-x2.jpg")
+    }
+
+}
+@media only screen and (max-width: 735px) and (max-device-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 735px) and (max-device-width: 735px) and (min-resolution: 144dpi),
+only screen and (max-width: 735px) and (max-device-width: 735px) and (min-resolution: 144dppx) {
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        background-image: url("images/cat-thumbs-1-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        background-image: url("images/cat-thumbs-2-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        background-image: url("images/cat-thumbs-3-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        background-image: url("../../../media/biotehnologija-x2.jpg")
+    }
+}
+@media only screen and (min-width: 736px) {
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        background-image: url("images/cat-thumbs-1-2x.jpg");
+        background-size: 640px 200px;
+        width: 640px;
+        height: 200px;
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        background-image: url("images/cat-thumbs-2-2x.jpg");
+        background-size: 640px 200px;
+        width: 640px;
+        height: 200px;
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        background-image: url("images/cat-thumbs-3-2x.jpg");
+        background-size: 640px 200px;
+        width: 640px;
+        height: 200px;
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        background-image: url("../../../media/biotehnologija-x2.jpg");
+        background-size: 640px 200px;
+        width: 640px;
+        height: 200px;
+        width: auto;
+        background-position: center center
+    }
+}
+@media only screen and (min-width: 736px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 736px) and (min-resolution: 144dpi),
+only screen and (min-width: 736px) and (min-resolution: 144dppx) {
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        background-image: url("images/cat-thumbs-1-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        background-image: url("images/cat-thumbs-2-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        background-image: url("images/cat-thumbs-3-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        background-image: url("../../../media/biotehnologija-x2.jpg");
+    }
+}
+@media only screen and (min-width: 736px) and (max-width: 1068px),
+only screen and (min-width: 736px) and (max-height: 800px) {
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        width: auto;
+        background-position: center center
+    }
+}
+@media only screen and (min-width: 736px) and (max-width: 735px) and (max-device-width: 735px) {
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        width: auto;
+        background-position: center center
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        width: auto;
+        background-position: center center
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi),
+(min-resolution: 144dppx) {
+    .category-thumbs .cat-thumb-2 .cat-tehnologija {
+        background-image: url("images/cat-thumbs-2-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-3 .cat-dizajn {
+        background-image: url("images/cat-thumbs-3-2x.jpg")
+    }
+    .category-thumbs .cat-thumb-4 .cat-distribucija {
+        background-image: url("../../../media/biotehnologija-x2.jpg")
+    }
+    .category-thumbs .cat-thumb-1 .cat-biznis {
+        background-image: url("images/cat-thumbs-1-2x.jpg")
+    }
+}
+.category-thumbs .cat-thumb-1 .cat-biznis {
+    background-repeat: no-repeat;
+    background-size: 640px 200px;
+    background-image: url("images/cat-thumbs-1-2x.jpg")
+}
+.category-thumbs .cat-thumb-2 .cat-tehnologija {
+    background-repeat: no-repeat;
+    background-size: 640px 200px;
+    background-image: url("images/cat-thumbs-2-2x.jpg")
+}
+.category-thumbs .cat-thumb-3 .cat-dizajn {
+    background-repeat: no-repeat;
+    background-size: 640px 200px;
+    background-image: url("images/cat-thumbs-3-2x.jpg")
+}
+.category-thumbs .cat-thumb-4 .cat-distribucija {
+    background-repeat: no-repeat;
+    background-size: 640px 200px;
+    background-image: url("../../../media/biotehnologija-x2.jpg")
+}
+
+#dodaj-heading {
+	background-image: url('../../../media/dodaj-heading-bgd.jpg');
+	background-color: #000;
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 60px;
+	}
+
+/*********** BEGIN: 1.1 Responsive Home ***********/
+
+.mobile-menu-item{
+	display: none;
+}
+
+@media screen and (max-width: 768px){
+	.kv-slide{
+		max-height: 50vh;
+	}
+
+	#header-nav li:not(.hamburger){
+		display: none;
+	}
+
+	.mobile-menu-item{
+		display: block;
+	}
+}
+
+/****** Reponsive Footer ******/
+footer p {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+@media screen and (max-width: 430px) {
+	footer #newsletter {
+		padding-top: 110px;
+	}
+
+	footer #newsletter-form input[type="email"] {
+		width: 80%;
+	}
+
+	footer #newsletter-form button {
+		padding: 16px 100px;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+/*********** END: Reponsive Home ***********/
+
+/*********** Begin: 1.2 Kategorije Home ***********/
+
+	#cat-thumbs {
+		background-color: #222222;
+		text-transform: uppercase;
+		text-align: center;
+		padding-bottom: 28px;
+	}
+
+	.cat-thumb-wrapper {
+		max-width: 1200px;
+		padding: 0 5%;
+		margin: 0 auto;
+	}
+
+	div.cat-thumb {
+		width: 20%;
+		/* min-width: 160px; */
+		float: left;
+		margin-top: 41px;
+	}
+
+	.cat-thumb p {
+		font-family: "msr1";
+		color: white !important;
+		font-size: 15px;
+		margin-top: 7px;
+	}
+
+	.cat-thumb-button {
+		background-color: #222;
+		border-radius: 50%;
+		width: 58px;
+		height: 58px;
+		text-align: center;
+		margin: -28px auto 50px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.cat-thumb-button i {
+	    margin-top: 24px;
+	    color: white;
+	    font-size: 24px;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.show {
+		display: block !important;
+	}
+
+	/* sakriva gugme na ekranima vecim od 944px */
+
+	@media screen and (max-width: 944px) {
+
+		.cat-thumb img {
+			width: 100px;
+		}
+
+	}
+
+	@media screen and (max-width: 747px) {
+
+		.cat-thumb img {
+			width: 80px;
+		}
+
+		.cat-thumb p {
+			font-size: 12px;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+
+		div.cat-thumb {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.cat-thumb img {
+			display: none;
+		}
+	}
+/*********** END: 1.2 Kategorije Home ***********/
+
+/*********** BEGIN: 2.0 Dodaj posao ***********/
+
+	#dodaj-bg-color {
+		background-color: #fff;
+	}
+
+	#dodaj-heading-text {
+		padding-top: 16%;
+		height: 33vh;
+		width: 60%;
+		margin: 0 auto;
+	}
+
+		#dodaj-heading-text h1 {
+			color: #fff;
+			font-family: msr9;
+			font-size: 50px;
+			margin-bottom: 22px;
+		}
+
+	#dodaj-body {
+		background-color: #fff;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+		#dodaj-body-wrapper {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		#dodaj-body h2 {
+			font-family: msr9;
+			font-size: 85px;
+			margin-bottom: 40px;
+			padding-top: 40px;
+		}
+
+		#dodaj-body h3 {
+			font-family: msr1;
+			font-size: 34px;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+			padding-top: 30px;
+		}
+
+		#dodaj-body p {
+			font-family: msr3;
+			line-height: 180%;
+			width: 100%;
+			font-size: 20px;
+			margin: 0px auto 40px;
+			text-align: center;
+		}
+
+			.dodaj-labela {
+				font-size: 12px !important;
+				color: #888;
+				font-style: italic;
+				text-transform: uppercase;
+			}
+
+		#dodaj-body img {
+			margin-bottom: 40px;
+		}
+
+		#dodaj-body img.responsive {
+			width: 100%;
+		}
+
+		.dodaj-cover {
+			background-image: url('../../../media/dodaj-anketa1.jpg');
+			background-repeat: no-repeat;
+			height: 340px;
+			background-size: cover;
+			background-position: center center;
+			margin-bottom: 20px;
+		}
+
+		#dodaj-dugme {
+		  border: 1px solid #fff;
+		  text-align: center;
+		  padding: 15px 5px;
+		  width: 200px;
+		  font-family: msr3;
+		  font-size: 16px;
+		  text-transform: uppercase;
+		  margin: 30px auto 0px auto;
+		  color: #fff;
+		}
+
+		.dodaj-realted-item {
+			display: inline;
+			float: left;
+			padding: 0px 2%;
+			width: 21%;
+		}
+
+		.dodaj-realted-item img {
+			width: 100%;
+			height: auto;
+		}
+
+		#ito-reset {
+			margin: 0 !important;
+		}
+/*********** END: Dodaj posao ***********/
+
+/*********** BEGIN: 2.1 Responsive Dodaj posao ***********/
+
+@media screen and (max-width: 760px){
+
+	#dodaj-body-wrapper {
+		width: 80%;
+	}
+
+	#dodaj-body h2 {
+		font-size: 40px;
+	}
+
+	.dodaj-cover {
+		height: 240px;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+
+	#dodaj-body-wrapper {
+		width: 90%;
+	}
+
+	.dodaj-realted-item {
+		width: 28%;
+	}
+
+	/* Pomera poslednji related item za 10px posto prelazi u novi red */
+	.dodaj-realted-item:last-child {
+		margin-top: 10px;
+	}
+
+	.dodaj-cover {
+		height: 180px;
+	}
+}
+
+@media screen and (max-width: 350px){
+
+	.dodaj-realted-item {
+		width: 45%;
+	}
+
+	/* Pomera pretposlednji related item za 10px posto prelazi u novi red */
+	.ubisoft-related-item {
+		margin-top: 10px;
+	}
+
+	.clear-na-350px {
+		float: none;
+		clear: both;
+	}
+
+	.dodaj-cover {
+		height: 147px;
+	}
+}
+
+/*********** END: Responsive Dodaj posao ***********/
+
+/*********** BEGIN: 3.0 Dodaj oglas ***********/
+
+#poslovi-oglasi #ito-hero {
+	width: 100%;
+}
+
+#poslovi-oglasi .para {
+	width: 55%;
+}
+
+#poslovi-oglasi .visual-form-builder-container {
+	max-width: 600px;
+	margin: 0px auto;
+	width: 100%;
+}
+
+#poslovi-oglasi .visual-form-builder fieldset {
+	border: none;
+	background-color: transparent;
+}
+
+#poslovi-oglasi .visual-form-builder .vfb-legend h3 {
+	color: #000;
+	font-size: 47px;
+	font-family: "msr7";
+	margin-bottom: 18px;
+	line-height: normal;
+}
+
+#poslovi-oglasi .visual-form-builder .vfb-legend {
+	border-bottom: none;
+}
+
+#poslovi-oglasi label.vfb-desc {
+	text-transform: uppercase;
+	font-family: "msr5";
+}
+
+#poslovi-oglasi .visual-form-builder label {
+	font-family: "msr5";
+	color: #444;
+	font-size: 15px;
+	display: block;
+	margin-bottom: 12px;
+}
+
+#poslovi-oglasi .visual-form-builder li,
+#poslovi-oglasi .entry-content .visual-form-builder li,
+#poslovi-oglasi .comment-content .visual-form-builder li,
+#poslovi-oglasi .mu_register .visual-form-builder {
+	width: 100%;
+}
+
+#poslovi-oglasi input.vfb-text,
+#poslovi-oglasi input.vfb-text[type="text"],
+#poslovi-oglasi input.vfb-text[type="tel"],
+#poslovi-oglasi input.vfb-text[type="email"],
+#poslovi-oglasi input.vfb-text[type="url"]
+{
+	width: 100%;
+	padding: 3px 15px 2px;
+	height: 34px;
+	text-shadow: none;
+	border: medium none;
+	font-size: 15px;
+	background-color: #FBFBFB;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#poslovi-oglasi textarea.vfb-textarea {
+	width: 100%;
+	padding: 15px;
+	height: 80px;
+	text-shadow: none;
+	border: medium none;
+	font-size: 15px;
+	resize: none;
+	background-color: #FBFBFB;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#poslovi-oglasi input.vfb-small[type="file"],
+#poslovi-oglasi input.vfb-medium[type="file"],
+#poslovi-oglasi input.vfb-large[type="file"] {
+	background: transparent;
+	padding-left: 0;
+	height: auto;
+	font-family: "msr3";
+}
+
+#poslovi-oglasi input.vfb-small[type="submit"],
+#poslovi-oglasi input.vfb-medium[type="submit"],
+#poslovi-oglasi input.vfb-large[type="submit"] {
+	background-color: green;
+}
+
+#poslovi-oglasi select {
+
+}
+
+#poslovi-oglasi select.vfb-select {
+	border: none;
+	/* Uklanja strelicu sa strane na mozilli zato sto je ruzna */
+	-moz-appearance: none;
+	padding: 3px 3px 3px;
+	font-family: "msr1";
+	font-size: 1.2em;
+}
+
+.vfb-submit, input.vfb-submit[type="submit"] {
+    font-size: 1.5em;
+    border: none;
+    background-color: #4FAF1E;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+/*********** END: Dodaj oglas ***********/
+
+/*********** BEGIN 4.0 Responsive: Filip dodao (Petar doradio) ***********/
+
+@media screen and (max-width: 650px){
+
+	/* Home page & Single wrappers*/
+	#post-listing
+	,#single-body{
+		padding-left: 20px;
+		padding-right: 20px;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+
+	/* Single */
+	#single-content blockquote{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.related-item{
+		float: none;
+		display: block;
+		max-width: none;
+		margin-bottom: 30px;
+	}
+
+	#single-related h6 {
+		text-align: center;
+	}
+
+	.single-jobs-location {
+		text-align: center !important;
+	}
+
+	#single-related {
+		margin-bottom: 0 !important;
+	}
+}
+/*********** END ***********/
+
+/*********** BEGIN: 5.0 Responsive Poslovi ***********/
+
+#poslovi-kv-tehnologija a {
+    display: inline-block;
+}
+
+#poslovi-kv-tehnologija {
+	height: auto;
+	padding-bottom: 20px;
+}
+
+.poslovi-izdvojene-stavka {
+	margin: 10px 0;
+}
+
+#poslovi-listing {
+	margin-top: 50px;
+}
+
+/* Poslednje dodato */
+.listing-oglas-standard,
+.listing-oglas-premium {
+	height: 420px;
+}
+
+.listing-oglas-mini-column {
+	height: 385px;
+	margin-bottom: 68px;
+}
+
+.oglas-mini {
+    height: 198px;
+}
+
+@media screen and (max-width: 980px){
+
+	#poslovi-listing-uberwrap{
+		max-width: 100%;
+	}
+
+	.listing-oglas-premium{
+		width: 45%;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+
+		/*height: auto;*/
+	}
+
+	.listing-oglas-standard{
+		width: 23%;
+		margin-left: 1%;
+		margin-right: 1%;
+
+		/*height: auto;*/
+	}
+
+	/*.listing-oglas-premium,
+	.listing-oglas-standard,
+	.listing-oglas-mini{
+		margin-left: 10px;
+		margin-right: 10px;
+	}*/
+
+	.listing-oglas-premium img,
+	.listing-oglas-standard img{
+		max-width: 100%;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+	#poslovi-kv-search{
+		display: none;
+	}
+
+	#poslovi-kv-kategorije a{
+		display: block;
+	}
+
+	.listing-oglas-premium{
+
+		width: 100%;
+		max-width: 470px;
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+
+		/*height: auto;*/
+	}
+
+	.listing-oglas-standard{
+		max-width: 225px;
+		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+
+		/*height: auto;*/
+	}
+
+}
+
+@media screen and (max-width: 480px){
+
+	.listing-oglas-premium,
+	.listing-oglas-standard,
+	.listing-oglas-mini-column{
+
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+
+		/*height: auto;*/
+	}
+
+	.oglas-mini{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+}
+/*********** END: Responsive Poslovi ***********/
+
+/*********** BEGIN: 6.0 Responsive kompanije ***********/
+
+#co-prof img {
+	max-width: 100%;
+	height: auto;
+}
+
+.company-logo {
+	width: 90px;
+}
+
+#co-prof-tagline {
+	width: 90%;
+	max-width: 480px;
+}
+
+.co-prof-section-wrap {
+	width: 90%;
+	max-width: 960px;
+}
+
+.co-prof-section-content {
+    width: 62%;
+}
+
+.sta_gradimo_video_div,
+.nas_tim_video_div {
+	margin-bottom: 50px;
+}
+
+.sta_gradimo_image_div,
+nas_tim_image_div {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.goth-co-portfolio-item {
+	margin-right: 60px;
+}
+
+.goth-co-portfolio-item:last-child {
+	margin-right: 0 !important;
+}
+
+.goth-co-tools {
+	width: auto !important;
+}
+
+.co-prof-team-item-wrapper {
+	margin-bottom: 50px;
+}
+
+.co-prof-team-item {
+	width: 150px;
+	margin: 20px 39px 10px 0 !important;
+}
+
+/*
+.co-prof-team-item:nth-child(6),
+.co-prof-team-item:nth-child(12) {
+	margin-right: 0 !important;
+}
+*/
+
+.co-prof-office-big {
+	width: 100%;
+	max-width: 610px;
+}
+
+.co-prof-office-item {
+    margin: 0 8px 20px 0;
+    float: left;
+}
+
+.co-prof-item-last {
+	margin-bottom: 20px;
+	float: left;
+}
+
+
+.co-prof-section .listing-oglas-premium {
+	width: 100%;
+    max-width: 460px;
+}
+
+.co-prof-section .listing-oglas-premium img {
+	width: 100%;
+	height: auto;
+}
+/*
+.co-prof-section .listing-oglas-premium-text {
+    padding: 0 20px 30px;
+}
+*/
+
+.co-prof-section .listing-oglas-premium-text small {
+	display: inline-block;
+}
+
+@media screen and (max-width: 1057px) {
+	.co-prof-office-item,
+	.co-prof-item-last {
+		margin: 0 8px 20px 0;
+	}
+
+	.co-prof-center-images {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.co-prof-section .listing-oglas-premium {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media screen and (max-width: 960px) {
+	.co-prof-section-title {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.co-prof-section-content,
+	.co-prof-team-item-wrapper {
+	    width: 90%;
+	    float: none;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.co-prof-section-sidebar {
+		float: none;
+		margin: 0 auto;
+	}
+
+/*  Sklanja crnu pozadinu u sidebaru i menja text u crno
+	.co-prof-about-us .co-prof-section-sidebar li {
+		border-bottom: none;
+	}
+
+	.co-prof-about-us .co-prof-id-homepage {
+	    background: url("http://startit.rs/wp-content/uploads/company-ID-1.png") no-repeat scroll 20px 15px;
+	}
+
+	.co-prof-about-us .co-prof-id-email {
+	    background: url("http://startit.rs/wp-content/uploads/company-ID-2.png") no-repeat scroll 20px 18px;
+	}
+
+	.co-prof-about-us .co-prof-id-category {
+	    background: url("http://startit.rs/wp-content/uploads/company-ID-3.png") no-repeat scroll 20px 18px;
+	}
+
+	.co-prof-about-us .co-prof-id-location {
+	    background: url("http://startit.rs/wp-content/uploads/company-ID-4.png") no-repeat scroll 20px 18px;
+	}
+
+	.co-prof-about-us .co-prof-id-size {
+    	background: url("http://startit.rs/wp-content/uploads/company-ID-5.png") no-repeat scroll 20px 18px;
+	}
+
+	.co-prof-about-us .co-prof-section-sidebar li,
+	.co-prof-about-us .co-prof-section-sidebar a  {
+		color: black;
+	}
+*/
+
+	.co-prof-responsive-portfolio {
+	    margin: 0px auto;
+	    width: 90%;
+	}
+
+	.co-prof-pictures {
+		text-align: center;
+	}
+
+	.co-prof-map {
+		margin-top: 60px;
+	}
+
+}
+
+@media screen and (max-width: 871px) {
+	.goth-co-portfolio-item {
+	    float: none;
+	    margin: 10px auto 70px !important;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	.co-prof-team-item {
+		float: none;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		text-align: center;
+	}
+}
+/*********** END: Responsive kompanije ***********/
+
+/*********** BEGIN: 7.0 Dodaj kompaniju ***********/
+.dodaj-kompaniju h2 {
+	font-family: msr7;
+	font-size: 36px;
+	margin: 60px 0 40px;
+}
+
+.dodaj-kompaniju .details_list {
+	text-align: left;
+	margin-bottom: 50px;
+	padding-left: 50px;
+}
+
+@media screen and (max-width: 970px) {
+	.dodaj-kompaniju .details_list {
+		padding-left: 0;
+	}
+}
+/*********** END: Dodaj kompaniju ***********/
+
+/*********** BEGIN: 8.0 Prijavi se za posao ***********/
+.single-poslovi-oglasi img {
+	max-width: 100%;
+	height: auto;
+}
+
+#dugme-postavi-pitanje,
+#so-co-dugme,
+.so-co-submit-button,
+.postavi-pitanje-submit-button {
+	width: 100%;
+	max-width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#dugme-postavi-pitanje {
+	background-color: #1E85A6;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.postavi-pitanje-submit-button,
+.so-co-submit-button {
+    background: #38a600;
+    font-family: 'msr1';
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 50px 0 40px 0;
+}
+
+.postavi-pitanje-submit-button {
+	border: none;
+}
+
+@media screen and (max-width: 620px) {
+	#so-content-wrap {
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 617px) {
+	#so-co-desc-text {
+		margin-top: 10px;
+		float: left;
+	}
+
+	#so-prijava-na-oglas img {
+		display: none;
+	}
+
+	#so-prijava-na-oglas h3 {
+		margin-bottom: 70px;
+	}
+
+	.so-input-blok.levo,
+	.so-input-blok.desno,
+	.so-label.levo,
+	.so-label.desno {
+		float: none;
+	}
+
+	.so-input,
+	.so-cv-input,
+	.so-textarea {
+		width: 90%;
+		max-width: 300px;
+	}
+
+	.so-co-submit-button {
+		width: 90%;
+		max-width: 330px;
+	}
+
+	#so-prijava-na-oglas {
+		text-align: center;
+	}
+}
+
+/*
+@media screen and (max-width: 600px) {
+	.so-input-blok.levo,
+	.so-input-blok.desno {
+		float: none;
+	}
+}
+*/
+
+/*********** END: Prijavi se za posao ***********/
+
+/*********** BEGIN: 9.0 Startit Centar Page ***********/
+
+.simcal-calendar {
+	background-color: #fbfbfb;
+	padding: 10px 25px;
+}
+
+.simcal-default-calendar-grid.simcal-default-calendar-light .simcal-day-void {
+	background-color: transparent !important;
+}
+
+.simcal-today-has-events div {
+	background-color: #00a100;
+	border: none !important;
+	color: white;
+}
+
+.simcal-today-has-events .simcal-day-label {
+	background-color: rgba(23, 148, 23, 1) !important;
+}
+
+.simcal-default-calendar-grid > table {
+	font-family: msr5;
+}
+
+.simcal-default-calendar .simcal-current h3 {
+    font-size: 20px;
+}
+
+
+.simcal-default-calendar .simcal-current {
+    padding-bottom: 25px !important;
+}
+
+.simcal-default-calendar-grid .simcal-calendar-head .simcal-nav {
+    padding: 30px 0 !important;
+}
+
+.simcal-week-day {
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.simcal-week {
+	padding-bottom: 20px !important;
+}
+
+.simcal-default-calendar-grid .simcal-events {
+    font-size: 13px !important;
+}
+
+li.simcal-event {
+	padding: 10px 5px !important;
+}
+
+.simcal-default-calendar-grid .simcal-day-number {
+	padding: 8px 4px 8px !important;
+	font-size: 14px;
+	font-family: 'msr9';
+}
+
+.simcal-default-calendar .simcal-tooltip-content {
+    font-size: 1em !important;
+    font-family: 'msr5';
+}
+
+.simcal-default-calendar .simcal-tooltip-content p {
+	font-family: 'msr5';
+}
+
+/*********** END: Startit centar Page ***********/
+
+/*********** BEGIN: 10.0 Prednost Centra ***********/
+
+.page-template-template-prednost-rada-iz-centra header {
+	display: none;
+}
+
+.inkubator-hero {
+	background: url(../../../media/inkubator-hero.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 550px;
+}
+
+.inkubator-wrapper,
+.inkubator-testimonials,
+.inkubator-uslovi-section {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.zajednicki-rad-section,
+.s-kim-si-section,
+.inkubator.sta-dobijas-section,
+.testimonials-wrapper,
+.inkubator-uslovi-header {
+	max-width: 660px;
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.zajednicki-rad-section {
+	padding-top: 69px;
+	margin-bottom: 73px;
+}
+
+.zajednicki-rad-section h1 {
+	font-size: 55px;
+	padding-bottom: 32px;
+}
+
+.prvi-red {
+	margin-bottom: 37px;
+}
+
+.s-kim-si-section h2,
+.inkubator.sta-dobijas-section h2,
+.inkubator-testimonials-section h2,
+.inkubator-uslovi-header h2 {
+	font-size: 46px;
+	font-family: "msr1";
+	padding-bottom: 35px;
+}
+
+.quotes {
+	width: 100%;
+	max-width: 580px;
+	margin: 20px auto 37px;
+}
+
+.quotes p {
+	font-family: Courier;
+}
+
+.left-quote,
+.right-quote {
+	width: 50%;
+	float: left;
+}
+
+.left-quote {
+	text-align: right;
+	padding-right: 42px;
+	box-sizing: border-box;
+}
+
+.right-quote {
+	text-align: left;
+	padding-left: 42px;
+	box-sizing: border-box;
+}
+
+.inkubator-quote-highlight-green {
+	background-color: #bfeec5;
+	padding: 3px;
+}
+
+.inkubator-quote-highlight-yellow {
+	background-color: #fff69e;
+	padding: 3px;
+}
+
+.s-kim-si-section img {
+	margin-bottom: 54px;
+}
+
+.inkubator.sta-dobijas-section {
+	margin-top: 60px
+}
+
+.inkubator-krugovi-wrapper {
+	margin-top: 64px;
+	margin-bottom: 112px;
+	text-align: center;
+}
+
+.inkubator-krug {
+	width: 25%;
+	float: left;
+	margin-top: 73px;
+}
+
+.inkubator-krug-1,
+.inkubator-krug-2,
+.inkubator-krug-3,
+.inkubator-krug-4 {
+	margin-top: 0;
+}
+
+.inkubator-krug p {
+	margin-top: 24px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.inkubator-testimonials-section {
+	background-color: #f2f2f2;
+	padding: 65px 0;
+}
+
+.inkubator-testimonials {
+	text-align: center;
+}
+
+.inkubator-testimonial {
+	margin-top: 55px;
+	width: 33.33%;
+	float: left;
+}
+
+.inkubator-testimonial h3 {
+	font-family: "msr9";
+	font-size: 22px;
+	margin: 26px 0 13px;
+}
+
+.inkubator-testimonial-description {
+	font-size: 15px;
+	margin-bottom: 18px;
+}
+
+.inkubator-testimonial-quote,
+.inkubator-testimonial-name {
+	font-style: italic;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.65);
+}
+
+.inkubator-testimonial-quote {
+	margin: 17px 0;
+}
+
+.inkubator-testimonial-name {
+	font-weight: bold;
+}
+
+.inkubator-uslovi-section {
+	padding: 76px 0 85px;
+}
+
+.inkubator-uslovi-list-div {
+	margin-top: 52px;
+	max-width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 10px;
+}
+
+.inkubator-uslovi-list li {
+	font-family: Courier;
+	margin-top: 28px;
+}
+
+.inkubator-footer {
+	background: url(../../../media/startit-centar-futer.jpg) no-repeat scroll 50% 50% #000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.inkubator-footer-wrapper {
+	width: 100%;
+	max-width: 660px;
+	margin: 0 auto;
+	padding: 77px 0;
+	text-align: center;
+}
+
+.inkubator-footer-wrapper h2 {
+	color: white;
+	font-size: 55px;
+	font-family: "msr9";
+	margin-bottom: 45px;
+}
+
+.inkubator-footer-wrapper p {
+	color: white;
+	margin-bottom: 35px;
+}
+
+.inkubator-footer-btn {
+	padding: 21px 56px;
+	background-color: #3ca41c;
+	display: inline-block;
+}
+
+.inkubator-footer-btn p {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+@media screen and (max-width: 766px) {
+	.inkubator-krug {
+		width: 33%;
+	}
+
+	.inkubator-krug-4 {
+		margin-top: 73px;
+	}
+	
+	.page #single-intro-wrap h1 {
+		font-size: 44px !important;
+	}
+}
+
+@media screen and (max-width: 651px) {
+	.inkubator-testimonial {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 587px) {
+	.inkubator-footer-btn {
+		width: 54%;
+	}
+
+	.left-quote {
+		padding-right: 30px;
+	}
+
+	.right-quote {
+		padding-left: 30px;
+	}
+}
+
+@media screen and (max-width: 581px) {
+	.inkubator-krug {
+		width: 50%;
+	}
+
+	.inkubator-krug-3 {
+		margin-top: 73px;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.inkubator-krug {
+		width: 100%;
+	}
+
+	.inkubator-krug-2 {
+		margin-top: 73px;
+	}
+}
+
+@media screen and (max-width: 405px) {
+	.left-quote {
+		padding-right: 20px;
+	}
+
+	.right-quote {
+		padding-left: 20px;
+	}
+}
+
+@media screen and (max-width: 368px) {
+	.left-quote {
+		padding-right: 10px;
+	}
+
+	.right-quote {
+		padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 368px) {
+	.left-quote {
+		padding-right: 24px;
+	}
+
+	.right-quote {
+		padding-left: 6px;
+	}
+}
+/*********** END: Prednost Centra ***********/
+
+/*********** BEGIN: 11.0 Zene u tehnologiji
+						 Uvod u R za Data Science
+						 Listing Postova		  ***********/
+
+.page-template-page-templatestemplate-zene-u-tehnologiji-php h1,
+.page-template-template-listing-postova h1 {
+	font-size: 65px !important;
+}
+
+.page-template-page-templatestemplate-zene-u-tehnologiji-php a,
+.page-template-template-listing-postova .listing-postovi a {
+	border-bottom: none !important;
+}
+
+.page-template-page-templatestemplate-zene-u-tehnologiji-php a:hover,
+.page-template-template-listing-postova .listing-postovi a:hover {
+	border-bottom: none !important;
+}
+
+.page-template-page-templatestemplate-zene-u-tehnologiji-php #single-intro-wrap p {
+	font-size: 16px;
+	text-align: justify;
+}
+
+.page-template-page-templatestemplate-uvod-u-r-php #single-intro-wrap p,
+.page-template-template-intro-to-r-php #single-intro-wrap p,
+.page-template-template-listing-postova #single-intro-wrap p {
+	font-size: 17px;
+	text-align: left;
+	line-height: 180%;
+}
+
+.zene-postovi {
+	margin-top: 20px;
+}
+
+.page-template-page-templatestemplate-uvod-u-r-php pre,
+.page-template-page-templatestemplate-intro-to-r-php pre {
+	margin-top: 0;
+	line-height: 140%;
+}
+
+.page-template-page-templatestemplate-uvod-u-r-php pre a,
+.page-template-page-templatestemplate-intro-to-r-php pre a {
+	border-bottom: none !important;
+}
+
+.pregled-kursa {
+	margin-bottom: 100px;
+}
+
+.r-code {
+	margin-top: 50px;
+}
+
+/*********** END Zene u tehnologiji
+				 Uvod u R za Data Science
+				 Listing Postova		  ***********/
+
+/*********** BEGIN: 12.0 Hacks ***********/
+
+/* Responsiv slika objasnjenje za dodaj kompaniju */
+.dodaj-kompaniju {
+	width: 100%;
+	height: auto;
+}
+
+/* namesta problem sa razmakom izmedju trece i cetvrte slike na Namics oglasima */
+/*
+#poslovi-oglasi .wp-image-28517 {
+	margin-top: -28px;
+}
+*/
+
+/* Centrira video embedovan sa sajta TED */
+iframe[src*="https://embed-ssl.ted.com"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+iframe[src*="https://www.youtube.com/embed"] {
+	max-width: 100%;
+	height: auto;
+	min-height: 300px !important;
+}
+
+iframe[src*="https://docs.google.com/forms"] {
+	width: 100%;
+}
+
+iframe[src*="https://w.soundcloud.com/"] {
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.rubrika-pod-pokroviteljstvom-seven-bridgesa {
+	width: 100%;
+	max-width: 660px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #112F51;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.rubrika-pod-pokroviteljstvom-seven-bridgesa p {
+	font-family: 'msr1';
+	font-size: 18px;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.rubrika-pod-pokroviteljstvom-seven-bridgesa a {
+	font-family: 'msr3';
+	color: white;
+}
+
+.rubrika-pod-pokroviteljstvom-seven-bridgesa a.underlined {
+	text-decoration: underline;
+}
+
+.so-cv-input,
+.so-textarea {
+    width: 95%;
+    max-width: 590px;
+}
+
+.page-template-template-lista-kompanija .ime-kompanije {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+@media screen and (max-width: 660px) {
+	.comment-content {
+		margin-top: 10px;
+	}
+}
+/*********** END: Hacks ***********/
+
+#budi-drug-forma {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#budi-drug-forma p {
+	font-size: 14px;
+}
+
+.budi-drug-button {
+	background-color: #1e85a6;
+	padding: 14px 170px;
+	width: 100%;
+	max-width: 620px;
+	font-family: 'msr1';
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-top: 0px;
+	border: 0px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.budi-drug-button:hover {
+	text-decoration: none !important;
+	background-color: #126e8c;
+}
+
+.podeli-oglas {
+	text-align: center;
+	margin: 30px 0 0;
+}
+
+.drustvene-mreze-autora i {
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+iframe[class^="scribd"] {
+	width: 100% !important;
+}
+
+iframe[src^="https://www.facebook.com/plugins/video"] {
+	width: 100% !important;
+	height: 400px !important;
+}
+
+@media screen and (max-width: 620px) {
+	iframe[src^="https://www.facebook.com/plugins/video"] {
+		height: 330px !important;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	iframe[src^="https://www.facebook.com/plugins/video"] {
+		height: 300px !important;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	iframe[src^="https://www.facebook.com/plugins/video"] {
+		height: 270px !important;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	iframe[src^="https://www.facebook.com/plugins/video"] {
+		height: 240px !important;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	iframe[src^="https://www.facebook.com/plugins/video"] {
+		height: 210px !important;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	iframe[src^="https://www.facebook.com/plugins/video"] {
+		height: 193px !important;
+	}
+}
+
+div[id^="attachment"] {
+	width: 100% !important;
+}
+
+/* sakriva WP AKADEMIJA u hamburger meniju */
+#menu-item-30783 {
+	display: none;
+}
+
+.kako-radimo a {
+	color: white;
+}
+
+.excerpt-details a,
+.excerpt-details a:hover,
+.excerpt-details a:active,
+.excerpt-details a:visited {
+	color: #656565 !important;
+}
+
+.slicni-oglasi {
+	text-align: center;
+}
+
+.slicni-oglasi h2 {
+	font-size: 20px;
+	color: #333;
+	font-family: 'msr7';
+	margin-bottom: 20px;
+	line-height: 130%;
+}
+
+.slicni-oglasi .listing-oglas-premium {
+	text-align: left;
+}
+
+.slicni-oglasi .co-prof-section-wrap {
+	width: 100%;
+}
+
+.slicni-oglasi .listing-oglas-premium {
+	height: 320px;
+	width: 100%;
+	max-width: 299px;
+	display: inline-block;
+}
+
+.slicni-oglasi .listing-oglas-premium:nth-child(2) {
+	margin-right: 0;
+}
+
+.slicni-oglasi .listing-oglas-premium img {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 980px) {
+	.slicni-oglasi .listing-oglas-premium {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+	.slicni-oglasi .listing-oglas-premium:nth-child(2) {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.slicni-oglasi .listing-oglas-premium {
+		margin-right: 0;
+		max-width: 350px;
+	}
+}
+
+.benefiti-ikonica {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.page-template-template-intro-to-r .comment-content a,
+.page-template-template-uvod-u-r .comment-content a {
+	border-bottom: none !important;
+}
+
+.page-template-template-intro-to-r .comment-content a:hover,
+.page-template-template-uvod-u-r .comment-content a:hover {
+	border-bottom: none !important;
+}
+
+.page-template-template-intro-to-r #comment-controls ul li,
+.page-template-template-uvod-u-r #comment-controls ul li {
+	padding-left: 0;
+}
+
+/* FOrma */
+
+.startit-form-wrapper {
+	max-width: 600px;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.startit-form {
+  position: relative;
+  margin: 20px 0;
+  background: 0;
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+  text-shadow: none;
+  font-family: inherit;
+	text-align: left;
+}
+
+.startit-form label {
+  font-family: "msr5";
+  color: #444;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.startit-required-asterisk {
+  margin: 0;
+  padding: 0;
+  color: #bc1212;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+
+.startit-form input,
+.startit-form textarea,
+.startit-form select {
+  width: 100%;
+  padding: 3px 5px 2px;
+  text-shadow: none;
+  border: medium none;
+  font-size: 15px;
+	font-family: "msr1";
+  background-color: #FBFBFB;
+  border-radius: 0;
+  box-shadow: none;
+	margin-bottom: 30px;
+}
+
+.startit-form input {
+  height: 34px;
+}
+
+.startit-form textarea {
+  height: 80px;
+	resize: none;
+}
+
+.startit-form input[type="file"] {
+	background-color: transparent;
+}
+
+.startit-form select {
+	border: none;
+  -moz-appearance: none;
+  padding: 3px 3px 3px;
+  font-family: "msr1";
+  font-size: 16px;
+}
+
+.startit-form input::-webkit-clear-button {
+	display: none !important;
+}
+
+/*sakriva strelice za kontrolu datuma na date pickeru*/
+.startit-form input::-webkit-inner-spin-button {
+	display: none !important;
+}
+
+.startit-form input[type="submit"] {
+    font-size: 1.5em;
+    border: none;
+    background-color: #4FAF1E;
+    color: white;
+    text-align: center;
+    width: 100%;
+		height: auto;
+    padding: 15px;
+    text-transform: uppercase;
+		cursor: pointer;
+}
+
+.startit-form .description {
+	font-family: 'msr1';
+}
+
+.startit-form #opis-pozicije {
+	height: 300px;
+}
+
+/*.startit-form input[type="file"] {
+    font-size: 16px;
+    color: #fff;
+    background: #3da598;
+    border: none;
+    padding: 16px 35px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-family: msr7;
+}*/
+
+.error-message {
+	background-color: rgba(255,0,0, 0.9);
+	text-align: center;
+	padding: 10px 0px;
+	position: fixed;
+	z-index: 1000;
+	bottom: 0px;
+	width: 100%;
+}
+
+.error-message p {
+	color: white;
+	font-family: 'msr5';
+	font-size: 20px;
+}
+
+#dismiss-button {
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+.r-redirect {
+	padding: 12px 30px;
+	border: 1px solid black;
+	font-family: 'msr1';
+	font-size: 20px; 
+	margin-bottom: 50px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.r-redirect p {
+	margin-bottom: 0 !important;
+	text-transform: uppercase;
+}
+
+.pregledaj-predracun,
+.posalji-predracun {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+.pregledaj-predracun {
+	background-color: #126e8c;
+}
+
+.posalji-predracun {
+	margin-top: 30px;
+	background-color: #38a600;
+}
+
+.pregledaj-predracun p,
+.posalji-predracun p {
+	color: white;
+}
+
+pre {
+	border-left: none;
+	background-color: #242424;
+	color: #ddd;
+	line-height: 150%;
+	overflow-y: hidden;
+	white-space: pre;
+}
+
+#poslovi-oglasi #so-content-wrap blockquote {
+	background: none repeat scroll 0 0 #fff;
+	border-left: 5px solid #068e02;
+	color: #4b4b4b;
+	line-height: 166%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding: 0px 25px 0px;
+	width: 90%;
+	max-width: 100%;
+}
+
+.page #single-intro-wrap h1 {
+	font-size: 65px;
+}
+
+.page-id-50573 .container div {
+	width: calc(33% - 20px);
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 23px
+}
+
+.page-id-50573 .container div:last-child {
+	margin-right: 0;
+}
+
+.page-id-50573 .container div a {
+	border-bottom: none !important;
+	font-family: 'msr3';
+}
+
+@media screen and (max-width: 380px) {
+	.page-id-50573 .container div {
+    width: 100%;
+    margin-bottom: 23px !important;
+    text-align: center;
+    }
+    
+    .page-id-50573 .container div {
+	    margin-bottom: 10px;
+    }
+    
+    .page-id-50573 .container div a {
+	    display: inline-block;
+    }
+}
+
+em {
+	font-style: italic;
+}
+
+ sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+/* Responsive dodaj posao fix */
+
+#oglasi-pricing {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+#oglasi-pricing div.wrapper {
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+}
+
+#oglasi-pricing-mini,
+#oglasi-pricing-standard,
+#oglasi-pricing-premium {
+	padding: 35px 35px 0 35px;
+	border-right: 1px solid #e8e8e8;
+	height: 594px;
+	background-color: #f2f2f2;
+}
+
+#oglasi-pricing h1 {
+	font-family: 'msr7';
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+
+#oglasi-pricing h2 {
+	font-family: msr9;
+	font-size: 85px;
+	/* margin-bottom: 40px; */
+	padding-top: 40px;
+}
+
+#oglasi-pricing ul {
+	padding: 35px 0px 20px 0px;
+}
+
+#oglasi-pricing ul li {
+	margin-bottom: 20px;
+	font-family: 'msr1';
+	font-size: 17px;
+	color: #333;
+}
+
+#oglasi-pricing ul li a {
+    color: #216980;
+    text-decoration: underline;
+}
+
+#oglasi-pricing ul li b {
+    font-family: 'msr7';
+    font-size: 17px;
+    color: #000;
+}
+
+
+.button-and-pricing {
+	padding: 0 10px;
+}
+
+
+
+#oglasi-button-mini,
+#oglasi-button-standard,
+#oglasi-button-premium {
+    width: 100%;
+	margin: 15px auto;
+    text-align: center;
+    /* margin: 15px 10px 15px 10px; */
+    background-color: #888;
+    color: #fff;
+    font-family: 'msr1';
+    font-size: 18px;
+    padding: 15px 0px;
+}
+
+#oglasi-button-standard {
+	background-color: #38a600;
+}
+
+.kako-radimo-highlighted,
+.sta-gradimo-highlighted {
+	margin-bottom: 25px;
+}
+
+.pricing-plan-discounts {
+	width: 100%;
+}
+
+@media screen and (max-width: 730px) {
+	
+	.page-template-template-poslovi-dodaj-posao #dodaj-heading-text img {
+		width: 100%;
+		margin-top: 50px;
+	}
+	
+	.page-template-template-poslovi-dodaj-posao #dodaj-heading-text h1 {
+		font-size: 28px;
+		margin-top: 30px;
+	}
+	
+	#oglasi-pricing {
+		flex-wrap: wrap;
+	}
+
+	#oglasi-pricing .wrapper {
+		width: 100% !important;
+	}
+	
+	#oglasi-pricing-mini,
+	#oglasi-pricing-standard,
+	#oglasi-pricing-premium {
+		width: 250px;
+		margin: 0 auto;
+	}
+	
+	#oglasi-button-mini,
+	#oglasi-button-standard,
+	#oglasi-button-premium  {
+		width: 250px !important;
+		margin: 0 auto;
+		
+	}
+	
+	.button-and-pricing {
+		width: 270px;
+		margin: 30px auto 60px;		
+	}
+	
+	.pricing-plan-discounts {
+		margin-top: 20px;
+	}
+}
+
+#poslovi-izdvojene-ikonice {
+	margin-bottom: -20px !important;
+}
+
+/* Pocetna novi dizajn */
+
+#ultimate-flex {
+	display: flex;
+	align-items: stretch;
+}
+
+/* .home */ .home h3 {
+	font-size: 13px;
+	font-family: 'msr7';
+	text-transform: uppercase;
+	margin: 5px 0 7px 0;
+}
+
+/* .home */ .section-decription {
+	font-size: 14px;
+	font-family: Arial;
+	color: #888;
+	font-weight: lighter;
+}
+
+/* .home */ .section-decription a {
+	color: #444;
+}
+
+/* .home */ .section-decription a:hover {
+	border-bottom: 1px solid #000;
+	color: #000;
+}
+
+/* .home */ hr {
+	border-top: 0.5px solid #CCC;
+	border-left: none;
+	border-bottom: none;
+	background-color: transparent;
+	color: transparent;
+	margin: 8px 0 25px 0;
+}
+
+/* .home */ #sidebar hr {
+	margin: 8px 0 15px 0;
+}
+
+/* kategorije treba srediti, sada je samo dummy */
+.cat-thumb-wrapper {
+	padding-top: 28px;
+}
+
+.cat-thumb-wrapper h3 {
+	color: white;
+	font-family: 'msr1';
+	margin-bottom: 30px;
+}
+
+#ultimate-wrapper {
+	width: 100%;
+    max-width: 884px;
+    /* max-width: 960px; */
+	margin: 0 auto;
+}
+
+/* .home */ #main-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+/* .home */ #main-wrapper #post-listing,
+/* .home */ #main-wrapper #sidebar {
+	padding-top: 20px; 
+}
+
+/* .home */ #main-wrapper #post-listing {
+	/* padding-left: 20px !important; */
+}
+
+/* .home */ #main-wrapper #post-listing {
+	margin: 0 70px 0 auto;
+}	
+
+/* Sidebar stilovi */
+/* .home */ #main-wrapper #sidebar {
+	background-color: #E7AA92;
+	width: 37%;
+	padding-left: 40px;
+}
+	
+/* .home */ #main-wrapper #sidebar div#naredni-dogadjaji,
+/* .home */ #main-wrapper #sidebar div#posebno-izdvajamo,
+/* .home */ #main-wrapper #sidebar div#startit-poslovi {
+	max-width: 300px;
+	margin-bottom: 50px;
+}
+
+/* Sidebar Startit poslovi */
+/* .home */ div#posebno-izdvajamo ul li,
+/* .home */ div#startit-poslovi ul li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+/* .home */ div#naredni-dogadjaji ul li {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+/* .home */ #calendar-image {
+	background: url('../images/dogadjaji-sidebar.png') center center no-repeat;
+	width: 40px;
+	min-width: 40px;
+	height:40px;
+	text-align: center;
+	margin-right: 10px;
+	margin-top: -7px;
+}
+
+/* .home */ #calendar-image p {
+	color: white;
+	font-family: 'msr3';
+	padding-top: 11px;
+}
+
+/* .home */ #image img,
+/* .home */ #logo-kompanije img {
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+/* .home */ #calendar-image {
+	margin-right: 10px;
+}
+
+/* .home */ div#naredni-dogadjaji #info h4 {
+	/* margin-top: 4px; */
+}
+
+/* .home */ div#naredni-dogadjaji #info {
+	margin-top: -2px;
+}
+
+/* .home */ div#naredni-dogadjaji #info p {
+	font-size: 11px;
+	font-family: 'msr5';
+	margin-top: 4px;
+	color: #888;
+	text-transform: uppercase;
+}
+
+/* .home */ #sidebar h4 {
+	font-size: 14px;
+	font-family: 'msr5';
+	color: #D10C0C;
+}
+
+/* .home */ #sidebar p.info-text {
+	font-size: 11px;
+	font-family: 'msr5';
+	margin-top: 4px;
+	color: #888;
+	text-transform: uppercase;
+}
+
+#white-bg {
+	background-color: white;
+	width: calc(50% - 442px);
+}
+
+#grey-bg {
+	background-color: #E7AA92;
+	width: calc(50% - 442px);
+}
+
+/* .home */ #category-slider button {
+	padding: 0 !important;
+	background: transparent;
+	border: none;
+}
+
+#categories {
+	max-width: 950px;
+}
+
+/* .home */ #category-slider {
+	color: white;
+	font-family: 'msr3';
+}
+
+#category-list {
+	display: flex;
+}
+
+#category-list h4,
+#next-button h4,
+#prev-button h4 {
+	font-size: 15px;
+	margin-top: 8px;
+	color: white;
+	font-family: 'msr3';
+	text-transform: uppercase;
+}
+
+#category-list div img {
+	display: inline-block;
+}
+
+#prev-button {
+	min-width: 84px;
+	overflow: hidden;
+}
+
+#next-button {
+	overflow: hidden;
+	min-width: 84px;
+}
+
+.slick-slide {
+	width: 100%;
+	max-width: 142px;
+}
+
+
+@media screen and (max-width: 1100px) {
+	#category-list h4 {
+		font-size: 12px;
+	}
+	
+	#category-list img {
+		width: 68px;
+	}
+	
+	#sidebar,
+	#white-bg,
+	#grey-bg {
+		display: none;
+	}
+	
+	#main-wrapper #post-listing {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 825px) {
+	#category-list h4 {
+		font-size: 10px;
+	}
+	
+	#category-list img {
+		width: 60px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#category-list h4 {
+		font-size: 9px;
+	}
+	
+	#category-list img {
+		width: 48px;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	#cat-thumbs {
+		padding-bottom: 14px;
+		bottom: -35px;
+	}
+	
+	#category-list #prev-button,
+	#category-list #next-button {
+		display: none !important;
+	}
+	
+	.slick-dots {
+		left: 0;
+	}
+	
+	.slick-dots li button::before {
+		color: white;
+	}
+	
+	.slick-dots li.slick-active button::before {
+		opacity: .75;
+		color: white;
+	}
+}
+
+@media screen and (max-width: 653px) {
+	#category-list h4 {
+		font-size: 9px;
+	}
+	
+	#category-list img {
+		width: 40px;
+	}
+	
+	#category-list p {
+		display: inline-block;
+	}
+}
+
+.sticky{
+	position:fixed;
+	top: 50px;
+	display:block;
+}
+
+
+
+#newsletter {
+	padding: 90px 0;
+}
+
+.page-template-template-startapakademija2016,
+.page-template-template-startapakademija2016-telekom {
+	background-color: white;
+}
+
+.telekom {
+	text-align: center !important;
+}
+
+.telekom-link {
+	text-align: center;
+	font-family: 'msr3';
+	font-size: 20px;
+}

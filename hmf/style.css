@@ -1,0 +1,106 @@
+
+@font-face {
+	font-family:"Miroslav";
+	src:url("Font/MIROSLN.ttf?"); 
+}
+html {
+	background-image:url("images/Pozadina/pozadina.png");
+	background-repeat:repeat;
+	background-attachment: fixed;
+}
+body {
+	font-family:"Miroslav","Times New Roman", Times, serif;
+}
+#pozadina {
+	padding:10px;
+	background-color:#FFE7CA;
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow:0 5px 15px 4px rgba(0,0,0,.5);
+}
+
+#header {
+	margin-bottom:10px;
+	padding:5px;	
+	overflow:hidden;
+}
+#glavniDiv {
+	float:left;
+	width:700px;
+}
+#sideBar {
+	float:right;
+	width:230px;
+	margin-bottom:10px;
+}
+#footer {
+	padding:10px;
+	clear:both;
+	background:black;
+	color:white;
+	border-radius: 8px;
+}
+#footer p {
+	margin:auto;
+	text-align:center;
+}
+.naslov {
+	text-align:center;
+	background:#FFF;
+	border-radius: 8px;
+	margin-bottom:0;
+}
+#gramata {
+	text-align:center;
+}
+.datum{
+	text-align:center;
+}
+#header p {
+	float:right;
+	text-align:center;
+	font-size:40px;
+	margin-right:150px;
+}
+
+.tab{
+	margin-left:15px;
+	text-align:justify;
+}
+.tabSidebar{
+	text-align:justify;
+	margin-right:15px;
+	margin-left:15px;
+}
+.latinica{
+	margin-left:15px;
+	
+	font-family: "Times New Roman", Times, serif;
+}
+.latinica2{
+	font-family: "Times New Roman", Times, serif;
+}
+.arial{
+	font-family: "Times New Roman", Times, serif;
+}
+
+#ziri {
+	margin-top:0;
+	text-align:center;
+}
+#logo {
+	float:left;
+}
+.datum1 {
+	text-align:center;
+	margin-bottom:0;
+}
+iframe {
+	display:block;
+	margin:20px auto;
+	border:1px solid white;
+}
+#cirilica {
+	font-family:"Miroslav","Times New Roman", Times, serif;
+}

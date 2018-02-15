@@ -1,0 +1,9 @@
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;	
+	display: block;
+    margin: auto auto;
+}
+
+#myImg:hover {opacity: 0.7;}
